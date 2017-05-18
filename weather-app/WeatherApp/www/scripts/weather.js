@@ -1,5 +1,5 @@
 ﻿// Get a free key at http://openweathermap.org/. Replace the "Your_Key_Here" string with that key.
-var OpenWeatherAppKey = "Your_Key_Here";
+var OpenWeatherAppKey = "49db97224175b8ba10f324dd7d102392";
 
 function getWeatherWithZipCode() {
 
@@ -15,7 +15,7 @@ function getWeatherWithZipCode() {
 
     }).fail(function (jqXHR) {
         $('#error-msg').show();
-        $('#error-msg').text("Error retrieving data. " + jqXHR.statusText);
+        $('#error-msg').text("Error retrieving data. Here: " + jqXHR.statusText);
     });
 
     return false;
